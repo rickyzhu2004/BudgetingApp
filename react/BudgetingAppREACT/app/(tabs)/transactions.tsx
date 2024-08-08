@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-export default function analytics() {
+export default function transactions() {
   return (
     <View
       style={{
@@ -9,7 +9,7 @@ export default function analytics() {
         alignItems: "center",
       }}
     >
-      <Text>Test 3</Text>
+      <Text>Test 2</Text>
     </View>
   );
 }
