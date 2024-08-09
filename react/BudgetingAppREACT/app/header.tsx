@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useRouter } from 'expo-router';
 
-function Header() {
+function Header({title}) {
   const router = useRouter();
 
   return (
@@ -12,11 +12,12 @@ function Header() {
           name="person-circle-outline"
           size={48}
           onPress={() => router.push("/(tabs)/profile")}
+          color='black'
           backgroundColor="transparent"
         />
       </View>
       <View style={styles.headerTextContainer}>
-        <Text style={styles.headerText}>Dashboard</Text>
+        <Text style={styles.headerText}>{title}</Text>
       </View>
     </View>
   );
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   },
   header: {
-    paddingTop: 30,
+    paddingTop: 40,
     justifyContent: 'flex-end',
     alignItems: 'flex-end',
     position: 'relative',
