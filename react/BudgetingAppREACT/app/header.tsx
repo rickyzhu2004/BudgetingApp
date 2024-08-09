@@ -11,7 +11,7 @@ function Header() {
         <Ionicons.Button
           name="person-circle-outline"
           size={48}
-          onPress={() => router.push("/profile")}
+          onPress={() => router.push("/(tabs)/profile")}
           backgroundColor="transparent"
         />
       </View>

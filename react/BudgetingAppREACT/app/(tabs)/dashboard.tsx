@@ -1,6 +1,6 @@
 import { Text, View } from "react-native";
 
-export default function analytics() {
+export default function dashboard() {
   return (
     <View
       style={{
