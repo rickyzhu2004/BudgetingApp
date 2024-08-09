@@ -16,7 +16,7 @@ function Header() {
         />
       </View>
       <View style={styles.headerTextContainer}>
-         <Text style={styles.headerText}>Title</Text>
+        <Text style={styles.headerText}>Dashboard</Text>
       </View>
     </View>
   );
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 32,
-    color: '#fff',
+    color: 'black',
   },
 });
 
